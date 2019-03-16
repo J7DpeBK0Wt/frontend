@@ -1,0 +1,57 @@
+{
+  "name": "aviasales-dashboard-test-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@types/classnames": "^2.2.7",
+    "@types/fontfaceobserver": "0.0.6",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.0",
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-redux": "^7.0.3",
+    "@types/react-tabs": "^2.3.1",
+    "@types/webpack-env": "^1.13.9",
+    "classnames": "^2.2.6",
+    "fontfaceobserver": "^2.1.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.8",
+    "react-tabs": "^3.0.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "reselect": "^4.0.0",
+    "tslint": "^5.13.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:all": "tslint -c tslint.json -p tsconfig.json src/**/*.{js,jsx,ts,tsx}",
+    "lint:staged": "lint-staged"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie < 11",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "tslint -c tslint.json -p tsconfig.json"
+  }
+}

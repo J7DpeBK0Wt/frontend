@@ -1,0 +1,21 @@
+.root
+{
+    width: 14px;
+    height: 14px;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+    &_theme
+    {
+        &_success
+        {
+            background: #8bc34a;
+        }
+
+        &_danger
+        {
+            background: #ff6a67;
+        }
+    }
+}

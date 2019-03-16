@@ -1,0 +1,40 @@
+.root
+{
+    min-width: 96px;
+    padding: 6px 15px;
+
+    list-style: none;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #4a4a4a;
+    border: 1px solid #d9d9d9;
+    border-right: 0;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    &:first-child
+    {
+        border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child
+    {
+        border-right: 1px solid #d9d9d9;
+        border-radius: 0 6px 6px 0;
+    }
+
+    &_selected
+    {
+        color: #fff;
+        border-color: #2196f3;
+        background: #2196f3;
+
+        &:last-child
+        {
+            border-right-color: #2196f3;
+        }
+    }
+}

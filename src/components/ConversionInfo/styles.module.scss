@@ -1,0 +1,190 @@
+.root
+{
+    position: relative;
+
+    display: flex;
+
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+
+    &:after
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 68px;
+
+        display: block;
+
+        content: '';
+
+        border-top: 1px solid #eff1f4;
+    }
+
+    &_final
+    {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        &:after
+        {
+            display: none;
+        }
+    }
+}
+
+.column
+{
+    &_icons
+    {
+        position: relative;
+
+        margin-right: 20px;
+
+        flex: 0 0 48px;
+    }
+
+    &_values
+    {
+        margin-right: 20px;
+
+        flex: 1 1 auto;
+    }
+
+    &_indicators
+    {
+        flex: 0 1 53%;
+    }
+}
+
+.icon
+{
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #2196f3;
+
+    align-items: center;
+    justify-content: center;
+
+    &__glyph
+    {
+        display: block;
+
+        fill: #fff;
+    }
+
+    &__status
+    {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+    }
+}
+
+.nextArrow
+{
+    position: absolute;
+    top: 28px;
+    left: 50%;
+
+    width: 10px;
+    height: 69px;
+    margin-left: -5px;
+
+    background: url('./nextArrow.svg') no-repeat;
+}
+
+.heading
+{
+    margin-bottom: 10px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &_theme
+    {
+        &_success
+        {
+            color: #4a4a4a;
+        }
+
+        &_danger
+        {
+            color: #ff6a67;
+        }
+    }
+}
+
+.badge
+{
+    position: relative;
+    top: -2px;
+
+    display: inline-block;
+
+    margin-left: 8px;
+}
+
+.value
+{
+    margin-top: 5px;
+
+    font-size: 20px;
+    line-height: 28px;
+
+    &__title
+    {
+        position: relative;
+        top: -5px;
+
+        display: inline-block;
+
+        margin-left: 10px;
+
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    &_current
+    {
+        color: #4a4a4a;
+    }
+
+    &_previous
+    {
+        color: #a0b0b9;
+    }
+}
+
+.indicator
+{
+    margin-bottom: 4px;
+}
+
+.description
+{
+    margin-top: 6px;
+
+    color: #a0b0b9;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.helpLinks
+{
+    margin-top: 6px;
+
+    color: #4a4a4a;
+
+    font-size: 12px;
+    line-height: 1.5;
+}

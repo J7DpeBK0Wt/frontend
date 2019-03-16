@@ -1,0 +1,27 @@
+.root
+{
+    display: inline-block;
+
+    height: 18px;
+    padding: 3px 6px;
+
+    color: #fff;
+    border-radius: 18px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+
+    &_theme
+    {
+        &_success
+        {
+            background: #8bc34a;
+        }
+
+        &_danger
+        {
+            background: #ff6a67;
+        }
+    }
+}

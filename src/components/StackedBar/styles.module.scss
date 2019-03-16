@@ -1,0 +1,29 @@
+.bar
+{
+    display: flex;
+}
+
+.legend
+{
+    margin-top: 20px;
+}
+
+.segment
+{
+    height: 8px;
+    margin-right: 1px;
+
+    flex: 0 0 auto;
+
+    &:first-child
+    {
+        border-radius: 2px 0 0 2px;
+    }
+
+    &:last-child
+    {
+        margin-right: 0;
+
+        border-radius: 0 2px 2px 0;
+    }
+}

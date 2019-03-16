@@ -1,0 +1,102 @@
+.root
+{
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
+
+        outline: 0;
+
+        .icon
+        {
+            &__glyph
+            {
+                fill: #2196f3;
+            }
+        }
+
+        .title
+        {
+            color: #2196f3;
+        }
+    }
+
+    &_selected
+    {
+        background: #ebfcff;
+
+        .icon
+        {
+            &__glyph
+            {
+                fill: #2196f3;
+            }
+        }
+
+        &,
+        &:hover,
+        &:focus
+        {
+            .title
+            {
+                color: #4a4a4a;
+            }
+        }
+
+        &:before
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+            display: block;
+
+            width: 3px;
+
+            content: '';
+
+            background: #2196f3;
+        }
+    }
+}
+
+.icon
+{
+    display: block;
+
+    padding: 7px 20px;
+
+    flex: 0 0 64px;
+
+    &__glyph
+    {
+        display: block;
+
+        fill: #a0b0b9;
+    }
+}
+
+.title
+{
+    display: block;
+
+    padding: 10px 20px 10px 0;
+
+    text-transform: uppercase;
+    letter-spacing: .5px;
+
+    color: #a0b0b9;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+
+    flex: 0 1 100%;
+}

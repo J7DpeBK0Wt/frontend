@@ -1,0 +1,59 @@
+{
+    "extends": [
+        "tslint-config-airbnb",
+        "tslint-react"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**/*.ts"
+        ]
+    },
+    "rules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        },
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "ter-arrow-parens": [
+            true,
+            "as-needed"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double",
+            "avoid-template"
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "multiline": {
+                    "arrays": "always",
+                    "objects": "always",
+                    "functions": "never",
+                    "imports": "always",
+                    "exports": "always",
+                    "typeLiterals": "always"
+                },
+                "singleline": "never",
+                "esSpecCompliant": true
+            }
+        ],
+        "import-name": false,
+        "variable-name": false,
+        "jsx-no-multiline-js": false
+    },
+    "jsRules": true
+}

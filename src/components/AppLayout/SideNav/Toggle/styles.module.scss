@@ -1,0 +1,52 @@
+.root
+{
+    display: block;
+
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 0;
+    background: #eff1f4;
+
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
+
+        outline: 0;
+        background: darken(#eff1f4, 3%);
+    }
+
+    &_expanded
+    {
+        .icon
+        {
+            right: 0;
+            left: auto;
+
+            &__glyph
+            {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.icon
+{
+    padding: 10px 20px;
+
+    &__glyph
+    {
+        display: block;
+
+        transition: transform .1s;
+        transform: rotate(0deg);
+
+        fill: #2196f3;
+    }
+}

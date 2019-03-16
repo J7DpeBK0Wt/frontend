@@ -1,0 +1,31 @@
+.root
+{
+    overflow: hidden;
+
+    width: 64px;
+
+    transition: width .1s;
+
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+
+    &_expanded
+    {
+        width: 230px;
+    }
+}
+
+.inner
+{
+    width: 230px;
+}
+
+.section
+{
+    padding: 14px 0;
+}
+
+.separator
+{
+    border-bottom: 1px solid #eff1f4;
+}

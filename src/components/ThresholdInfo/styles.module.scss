@@ -1,0 +1,42 @@
+.root
+{
+    position: relative;
+
+    padding-left: 20px;
+}
+
+.icon
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.value
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &_theme
+    {
+        &_success
+        {
+            color: #4a4a4a;
+        }
+
+        &_danger
+        {
+            color: #ff6a67;
+        }
+    }
+}
+
+.averageValue
+{
+    color: #a0b0b9;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+}
